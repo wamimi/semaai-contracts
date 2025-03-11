@@ -3,7 +3,8 @@ SemaAI is a cross-platform engagement reward system that tracks and validates so
 
 This repository contains the smart contracts for the Sema platform, which includes:
 
-#### 1. SemaToken(0xd0a824fbB75C92224bDcae836A877A25db43ae96)
+#### 1. SemaToken(0xd0a824fbB75C92224bDcae836A877A25db43ae96 - ETHSepolia)
+#### 0x0152036D5d42Ea20f88A32423Ee5C186E435bF51 - Lisk Sepolia ✅verified
 
 An ERC-20 token with role-based minting and burning capabilities:
 Total Supply: `8,000,000` SEMA tokens
@@ -14,7 +15,8 @@ Minting functionality for authorized entities
 Burning functionality for token holders
 
 #### 2. WalletImplementation (0xcf93951352635ee4bdbc453a2eed63eb4722a762)
-
+#### 0x0828AD412378D82cC7e1566977Eb26e359F0C9fA - Lisk Sepolia ✅
+ 
 A minimal contract used as the implementation for proxy wallets:
 Features:
 Stores wallet owner, ID, and role
@@ -22,6 +24,7 @@ Initialization function that can only be called once
 Used as the base for cloned wallets
 
 #### 3. WalletFactory(0x56450BFE0fA8A3cDB71CF00144E0297CBAe53998)
+#### 0x5495cEb2Dd933661309c91525CdFFE4b579c9104 - Lisk Sepolia ✅ Verified
 
 Creates and manages user wallets using a minimal proxy pattern:
 
@@ -37,6 +40,7 @@ Maintains relationships between parent and child wallets
 Role-based access control for wallet creation
 
 #### 4.EngagementTracker(0x5E8Fd84e35dA89f22c31CA1C77E7E239353409F8)
+#### 0x22810Ca418Cd716CA5Bb76fC4730747eC12bF02A - Lisk Sepolia ✅ verified
 
 Records and validates user engagements, calculates rewards:
 
@@ -52,6 +56,8 @@ Creates wallets for users via WalletFactory
 Configurable platform metrics for different engagement types
 
 #### 5. StakingContract
+#### 0x8FE90F8c42B1BC96Ae7B5591Ae4b74c835fB9a13 - Lisk Sepolia ✅
+
 Implements staking and slashing mechanisms for anti-Sybil protection:
 
 ### Features:
